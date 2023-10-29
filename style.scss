@@ -1,0 +1,130 @@
+$app-background: #0c1317;
+$app-background-deeper: #0a1014;
+$header: #202c33;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    body {
+        background-image: linear-gradient(180deg, $app-background, $app-background-deeper);
+        padding: 20px;
+        header {
+            display: flex;
+            background-color: $header;
+            height: 50px;
+            .headLeft {
+                width: 400px;
+                border-right: 1px solid rgba(128, 128, 128, 0.168);
+                height: 100%;
+            }
+            .headRight{
+                width: 73%;
+            }
+        }
+        main {
+            display: flex;
+            #right{
+                height: 85vh;
+                position: relative;
+                width: 73%;
+                form{
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    justify-content: center;
+                    bottom: 0;
+                    padding: 10px;
+                    background-color: $header;
+                    width: 100%;
+                    gap: 20px;
+                    input{
+                        width: 85%;
+                        border-radius: 4px;
+                        background-color: #384b55;
+                        padding: 8px;
+                        border: none;
+                    }
+                    button{
+                        background-color: #384b55;
+                        padding: 8px;
+                        border: none;
+                        color: white;
+                        border-radius: 4px;
+                    }
+                }
+            }
+            #left {
+                width: 400px;
+                border-right: 1px solid rgba(128, 128, 128, 0.168);
+                height: 85vh;
+                background-color: #0a0e10;
+                overflow-y: scroll;
+                
+                &::-webkit-scrollbar{
+                    background-color: #202c33;
+                    width: 3px;
+                }
+                &::-webkit-scrollbar-thumb{
+                    background-color: #7d7d7d;
+                    width: 5px;
+                    
+                }
+               /*  ::-webkit-scrollbar-corner{
+                    background-color: #202c33;
+                    width: 5px;
+                }
+                ::-webkit-scrollbar-track{
+                    background-color: #202c33;
+                    width: 5px;
+                }
+                ::-webkit-scrollbar-track-piece{
+                    background-color: #202c33;
+                    width: 5px;
+                } */
+                .persons {
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    padding: 5px;
+                    gap: 15px;
+                    .textPers{
+                        display: flex;
+                       align-items: center;
+                       justify-content: space-between;
+                       padding-right: 10px;
+                        border-bottom: 1px solid rgba(128, 128, 128, 0.168);
+                        height: 60px;
+                        width: 100%;
+                        .textPersDate{
+                            font-size: 13px;
+                            color: rgb(132, 131, 131);
+                        }
+                        .textPersLeft{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 3px;
+                            p{
+                                font-size: 14px;
+                                color: rgb(132, 131, 131);
+                            }
+                            
+                        }
+                    }
+                    .imgPers {
+                        width: 60px;
+                        height: 50px;
+                        border-radius: 100%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

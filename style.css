@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+* body {
+  background-image: linear-gradient(180deg, #0c1317, #0a1014);
+  padding: 20px;
+}
+* body header {
+  display: flex;
+  background-color: #202c33;
+  height: 50px;
+}
+* body header .headLeft {
+  width: 400px;
+  border-right: 1px solid rgba(128, 128, 128, 0.168);
+  height: 100%;
+}
+* body header .headRight {
+  width: 73%;
+}
+* body main {
+  display: flex;
+}
+* body main #right {
+  height: 85vh;
+  position: relative;
+  width: 73%;
+}
+* body main #right form {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+  padding: 10px;
+  background-color: #202c33;
+  width: 100%;
+  gap: 20px;
+}
+* body main #right form input {
+  width: 85%;
+  border-radius: 4px;
+  background-color: #384b55;
+  padding: 8px;
+  border: none;
+}
+* body main #right form button {
+  background-color: #384b55;
+  padding: 8px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+* body main #left {
+  width: 400px;
+  border-right: 1px solid rgba(128, 128, 128, 0.168);
+  height: 85vh;
+  background-color: #0a0e10;
+  overflow-y: scroll;
+  /*  ::-webkit-scrollbar-corner{
+       background-color: #202c33;
+       width: 5px;
+   }
+   ::-webkit-scrollbar-track{
+       background-color: #202c33;
+       width: 5px;
+   }
+   ::-webkit-scrollbar-track-piece{
+       background-color: #202c33;
+       width: 5px;
+   } */
+}
+* body main #left::-webkit-scrollbar {
+  background-color: #202c33;
+  width: 3px;
+}
+* body main #left::-webkit-scrollbar-thumb {
+  background-color: #7d7d7d;
+  width: 5px;
+}
+* body main #left .persons {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 5px;
+  gap: 15px;
+}
+* body main #left .persons .textPers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.168);
+  height: 60px;
+  width: 100%;
+}
+* body main #left .persons .textPers .textPersDate {
+  font-size: 13px;
+  color: rgb(132, 131, 131);
+}
+* body main #left .persons .textPers .textPersLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+* body main #left .persons .textPers .textPersLeft p {
+  font-size: 14px;
+  color: rgb(132, 131, 131);
+}
+* body main #left .persons .imgPers {
+  width: 60px;
+  height: 50px;
+  border-radius: 100%;
+}
+* body main #left .persons .imgPers img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}/*# sourceMappingURL=style.css.map */
