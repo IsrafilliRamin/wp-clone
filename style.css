@@ -36,6 +36,38 @@
   position: relative;
   width: 100%;
 }
+* body main #right .allMessage {
+  background-color: #000538;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 70px 50px;
+}
+* body main #right .allMessage .showMessageR {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: white;
+}
+* body main #right .allMessage .showMessageR p {
+  background-color: #7d7d7d;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+* body main #right .allMessage .showMessageL {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: white;
+}
+* body main #right .allMessage .showMessageL p {
+  background-color: #7d7d7d;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
 * body main #right form {
   display: flex;
   align-items: center;
@@ -60,6 +92,7 @@
   border: none;
   color: white;
   border-radius: 4px;
+  cursor: pointer;
 }
 * body main #left {
   width: 400px;
