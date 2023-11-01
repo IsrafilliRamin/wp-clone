@@ -11,7 +11,7 @@
 * body header {
   display: flex;
   background-color: #202c33;
-  height: 50px;
+  height: 5vh;
 }
 * body header .headLeft {
   width: 400px;
@@ -19,15 +19,22 @@
   height: 100%;
 }
 * body header .headRight {
-  width: 73%;
+  width: 100%;
+}
+* body header .headRight .personName {
+  display: flex;
+  color: white;
+  align-items: center;
+  height: 100%;
+  padding: 0px 30px;
 }
 * body main {
   display: flex;
+  height: 90vh;
 }
 * body main #right {
-  height: 85vh;
   position: relative;
-  width: 73%;
+  width: 100%;
 }
 * body main #right form {
   display: flex;
@@ -57,7 +64,6 @@
 * body main #left {
   width: 400px;
   border-right: 1px solid rgba(128, 128, 128, 0.168);
-  height: 85vh;
   background-color: #0a0e10;
   overflow-y: scroll;
   /*  ::-webkit-scrollbar-corner{

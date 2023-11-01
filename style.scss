@@ -12,22 +12,30 @@ $header: #202c33;
         header {
             display: flex;
             background-color: $header;
-            height: 50px;
+            height: 5vh;
             .headLeft {
                 width: 400px;
                 border-right: 1px solid rgba(128, 128, 128, 0.168);
                 height: 100%;
             }
             .headRight{
-                width: 73%;
+                width: 100%;
+                .personName{
+                    display: flex;
+                    color: white;
+                    align-items: center;
+                    height: 100%;
+                    padding: 0px 30px;
+                }
             }
         }
         main {
             display: flex;
+            height: 90vh;
             #right{
-                height: 85vh;
+               
                 position: relative;
-                width: 73%;
+                width: 100%;
                 form{
                     display: flex;
                     align-items: center;
@@ -57,7 +65,7 @@ $header: #202c33;
             #left {
                 width: 400px;
                 border-right: 1px solid rgba(128, 128, 128, 0.168);
-                height: 85vh;
+               
                 background-color: #0a0e10;
                 overflow-y: scroll;
                 
