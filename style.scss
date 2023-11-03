@@ -1,11 +1,38 @@
 $app-background: #0c1317;
 $app-background-deeper: #0a1014;
 $header: #202c33;
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+html {
+    background-color: transparent !important;
+    font-size: none !important;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: auto !important;
+    min-width: fit-content !important;
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    html {
+    background-color: red !important;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
     body {
         background-image: linear-gradient(180deg, $app-background, $app-background-deeper);
         padding: 20px;
@@ -80,12 +107,25 @@ $header: #202c33;
                     background-color: $header;
                     width: 100%;
                     gap: 20px;
-                    input{
+                    .text{
                         width: 85%;
                         border-radius: 4px;
                         background-color: #384b55;
                         padding: 8px;
                         border: none;
+                    }
+                    .file.is-boxed .file-cta{
+                        color: white;
+                        border: none !important;
+                        border-radius: 4px !important;
+                        background-color: #384b55 !important;
+                        padding: 4px 9px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .file-icon{
+                            margin: 0px;
+                        }
                     }
                     button{
                         background-color: #384b55;
