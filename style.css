@@ -4,14 +4,15 @@ html {
   font-size: none !important;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: auto !important;
-  min-width: -moz-fit-content !important;
-  min-width: fit-content !important;
+  min-width: 100% !important;
   overflow-x: auto !important;
   overflow-y: auto !important;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
 }
 
 * {
@@ -114,6 +115,7 @@ html {
   background-color: #384b55;
   padding: 8px;
   border: none;
+  color: white;
 }
 * body main #right form .file.is-boxed .file-cta {
   color: white;
