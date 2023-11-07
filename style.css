@@ -20,6 +20,9 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  /* ::-webkit-scrollbar{
+      display: none;
+  } */
 }
 * html {
   background-color: red !important;
@@ -44,9 +47,15 @@ html {
   height: 5vh;
 }
 * body header .headLeft {
-  width: 400px;
-  border-right: 1px solid rgba(128, 128, 128, 0.168);
+  width: 399px;
+  border-right: 4px solid rgba(128, 128, 128, 0.168);
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+* body header .headLeft .fa-user-group {
+  display: none;
 }
 * body header .headRight {
   width: 100%;
@@ -70,9 +79,14 @@ html {
   background-color: #000538;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  flex-flow: column;
+  justify-content: flex-end;
+  /* align-items: end; */
+  /*  flex-direction: column; */
+  /*   justify-content: flex-end; */
   padding: 70px 50px;
+  gap: 10px;
+  overflow-y: auto;
 }
 * body main #right .allMessage .showMessageR {
   width: 100%;
@@ -164,12 +178,19 @@ html {
   background-color: #7d7d7d;
   width: 5px;
 }
+* body main #left .close {
+  display: none;
+}
 * body main #left .persons {
   display: flex;
   align-items: center;
   color: white;
   padding: 5px;
   gap: 15px;
+}
+* body main #left .persons:hover {
+  background-color: #384b55;
+  cursor: pointer;
 }
 * body main #left .persons .textPers {
   display: flex;
@@ -205,4 +226,55 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 100%;
+}
+
+/* responsive design */
+@media (max-width: 677px) {
+  * body {
+    padding: 10px;
+  }
+  * body header {
+    height: 7vh;
+  }
+  * body header .headLeft .fa-user-group {
+    display: block;
+  }
+  * body header .headLeft {
+    width: -moz-fit-content;
+    width: fit-content;
+    justify-content: start;
+    position: relative;
+    padding: 15px;
+  }
+  * body main #left .persons .textPers .textPersLeft h3 {
+    font-size: 13px;
+  }
+  * body main #left .persons .imgPers {
+    width: 50px;
+    height: 40px;
+  }
+  * body main #left {
+    position: absolute;
+    left: -100%;
+    top: 0px;
+    z-index: 3;
+    height: 100vh;
+    width: -moz-fit-content;
+    width: fit-content;
+    transition: 0.5s all;
+  }
+  * body main #left .close {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 20px;
+  }
+  * body main #right .allMessage {
+    padding: 60px 9px;
+  }
+  * body main #right .allMessage {
+    overflow-y: auto;
+    padding: 60px 9px;
+  }
 }/*# sourceMappingURL=style.css.map */
