@@ -79,14 +79,29 @@ html {
   background-color: #000538;
   height: 100%;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  justify-content: baseline;
   justify-content: flex-end;
-  /* align-items: end; */
-  /*  flex-direction: column; */
-  /*   justify-content: flex-end; */
   padding: 70px 50px;
   gap: 10px;
   overflow-y: auto;
+  overflow-x: hidden;
+  /*  flex-flow: column;
+  justify-content: flex-end; */
+  /* display: flex;
+  flex-flow: column;
+  justify-content: flex-end; */
+  /* align-items: end; */
+  /*  flex-direction: column; */
+  /*   justify-content: flex-end; */
+}
+* body main #right .allMessage::-webkit-scrollbar {
+  background-color: #202c33;
+  width: 3px;
+}
+* body main #right .allMessage::-webkit-scrollbar-thumb {
+  background-color: #7d7d7d;
+  width: 5px;
 }
 * body main #right .allMessage .showMessageR {
   width: 100%;
